@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "playwright": "^1.65.1"
+  },
+  "name": "myter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-playwright": "node src/test-playwright.js"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
