@@ -7,7 +7,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-playwright": "node src/test-playwright.js"
+    "test-playwright": "node src/test-playwright.js",
+    "login": "node src/login.js",
+    "check-session": "node src/check-session.js",
+    "search": "node src/search.js",
+    "search2": "node src/search2.js",
+    "image-search": "node src/image-search.js"
   },
   "keywords": [],
   "type": "commonjs"
