@@ -3,16 +3,20 @@ const { chromium } = require("playwright");
 
 async function main() {
   const browser = await chromium.launch({
+    channel: "chrome",
     headless: false
   });
 
-  const context = await browser.newContext();
+  const context = await browser.newContext({
+     userAgent:
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36"
+  });
 
   const page = await context.newPage();
 
   console.log("Opening X login page...");
 
-  await page.goto("https://x.com/i/flow/login");
+  await page.goto("https://x.com/home");
 
   console.log("");
   console.log("====================================");
